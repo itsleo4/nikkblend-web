@@ -12,7 +12,7 @@ export default function Contact() {
 
   const handleWhatsAppSend = (e) => {
     e.preventDefault();
-    const phone = "9518210623";
+    const phone = "919518210623";
     const text = `Hi Nikkblend! My name is ${formData.name}. I'm interested in ${formData.service}. %0A%0AOrder details: ${formData.message}`;
     window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
   };
@@ -67,7 +67,7 @@ export default function Contact() {
                 <p className="text-gray-500 text-xs uppercase tracking-[0.2em] mb-4">Preferred Chat</p>
                 <div className="flex flex-col gap-3">
                   <a 
-                    href="https://wa.me/9518210623" 
+                    href="https://wa.me/919518210623" 
                     className="flex items-center justify-center gap-2 bg-[#25D366]/10 text-[#25D366] border border-[#25D366]/20 py-3 hover:bg-[#25D366] hover:text-white transition duration-300 uppercase text-xs tracking-widest font-bold"
                   >
                     <FaWhatsapp /> WhatsApp Now

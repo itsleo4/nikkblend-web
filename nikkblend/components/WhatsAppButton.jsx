@@ -1,21 +1,15 @@
 import { FaWhatsapp } from 'react-icons/fa';
 
-const WhatsAppButton = () => {
-  const phoneNumber = "9518210623";
-  const message = "Hi Nikkblend, I want to book an appointment.";
-  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-
+export default function WhatsAppButton() {
   return (
     <a
-      href={whatsappUrl}
+      href="https://wa.me/919518210623?text=Hello%20Nikkblend,%20I%20would%20like%20to%20enquire%20about%20your%20services."
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-8 right-8 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl transition-transform duration-300 hover:scale-110 active:scale-90 flex items-center justify-center"
-      aria-label="Book on WhatsApp"
+      className="fixed bottom-8 right-8 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform duration-300 flex items-center justify-center"
+      aria-label="Chat on WhatsApp"
     >
-      <FaWhatsapp size={30} />
+      <FaWhatsapp size={28} />
     </a>
   );
-};
-
-export default WhatsAppButton;
+}
