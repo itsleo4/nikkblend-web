@@ -40,9 +40,16 @@ export default function Home() {
               <p className="text-gray-400 text-sm max-w-sm leading-relaxed mb-12 font-light">
                 Redefining the grooming standard through architectural precision and premium doorstep care.
               </p>
-              <button className="bg-ion-gold text-black font-bold px-12 py-5 text-[10px] uppercase tracking-[0.2em] hover:bg-white transition-all duration-500 shadow-xl shadow-ion-gold/5">
+              
+              {/* FIXED BUTTON: Now links to your fixed WhatsApp number */}
+              <a 
+                href="https://wa.me/919518210623?text=Hello%20Nikkblend,%20I%20would%20like%20to%20book%20a%20luxury%20grooming%20session." 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block bg-ion-gold text-black font-bold px-12 py-5 text-[10px] uppercase tracking-[0.2em] hover:bg-white transition-all duration-500 shadow-xl shadow-ion-gold/5"
+              >
                 Book Appointment
-              </button>
+              </a>
             </motion.div>
           </div>
 
