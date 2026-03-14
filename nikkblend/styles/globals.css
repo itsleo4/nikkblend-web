@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --color-void: #07070A;
+  --color-ion-gold: #FFD66B;
+  --color-surface: #121215;
+  --font-playfair: "Playfair Display", serif;
+}
+
+/* 1. Global Reset */
+:root {
+  background-color: #07070A;
+  color: #F5F5F5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 2. The "Giant Image" Emergency Fix */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 3. Layout Utilities */
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+/* 4. Custom Scrollbar for Luxury Feel */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #07070A;
+}
+::-webkit-scrollbar-thumb {
+  background: #FFD66B;
+}
